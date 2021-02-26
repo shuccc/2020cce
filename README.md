@@ -42,7 +42,7 @@ int main()
 }
 
 ```
-## 4.基礎轉換為等級
+## 4.基礎:基礎轉換為等級
 ```C
 #include <stdio.h>
 int main()
