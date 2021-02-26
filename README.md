@@ -1,7 +1,7 @@
 # 2020cce
 程式設計
 ## 1.基礎:找零錢
-```
+```C
 #include <stdio.h>
 int main()
 {
@@ -15,7 +15,7 @@ int main()
 }
 ```
 ## 2.基礎:因數個數
-```
+```C
 #include <stdio.h>
 int main()
 {
