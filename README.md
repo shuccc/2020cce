@@ -131,7 +131,7 @@ int main()
 }
 
 ```
-## 1.
+## 01.老師示範 int *p = &a[2]; *p=222; p = p + 2; *p = 666;
 ```c
 #include <stdio.h>
 int main()
@@ -144,7 +144,7 @@ int main()
     *p=666;
 }
 ```
-## 2.
+## 02.老師示範 int *p = &a[2]; *p=222; p = p + 2; *p = 666;
 ```c
 #include <stdio.h>
 int a[5]={0,10,20,30,40};
@@ -166,7 +166,7 @@ int main()
         printAll();
 }
 ```
-## 03.
+## 03.老師把 int * p = &a[2] ; 的 p 心中的值(心裡放住址的小紙條) 印出來給你看 printf("%d\n", p);
 ```c
 #include <stdio.h>
 int a[5]={0,10,20,30,40};
@@ -192,7 +192,7 @@ int main()
 }
 
 ```
-## 04.
+## 04. int * p; p = (int *) malloc( sizeof(int) * 10 );
 ```c
 #include <stdio.h>
 #include <stdio.h>
