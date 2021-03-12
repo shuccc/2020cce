@@ -209,3 +209,112 @@ int main(){
 }
 
 ```
+## 05.進階題：計算陣列的平方值
+```c
+#include <stdio.h>
+int main()
+{
+	int N;
+	int a[100];
+	scanf("%d",&N);
+	for(int i=0;i<N;i++){
+		scanf("%d",&a[i]);
+		printf("%d,",a[i]*a[i]);
+	}
+	printf("\n");
+
+
+
+}
+```
+## 06.進階題：大小寫轉換
+```c
+#include <stdio.h>
+int main()
+{
+	int N;
+	int a[100];
+	scanf("%d",&N);
+	for(int i=0;i<N;i++){
+		scanf("%d",&a[i]);
+		printf("%d,",a[i]*a[i]);
+	}
+	printf("\n");
+
+
+
+}
+```
+## 07.基礎題：計算幾週與幾天
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",(n-2000)/500*5+100+5);
+	printf("\n");
+
+
+}
+```
+## 08.基礎題：計程車資計算
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",(n-2000)/500*5+100+5);
+	printf("\n");
+
+
+}
+```
+## 09.基礎題：兩數間可被5整除的整數
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a<b){
+		for(int i=a;i<=b;i++){
+		if(i%5==0) printf("%d\n",i);
+		}
+	}
+	else if(a>b){
+		for(int i=b;i<=a;i++){
+		if(i%5==0) printf("%d\n",i);
+	
+		}
+	
+	
+	}
+
+
+}
+```
+## 10.基礎題：整數間最大距離
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a<b&&b<c) printf("%d",c-a);
+	else if(a<c&&c<b) printf("%d",b-a);
+	else if(b<a&&a<c) printf("%d",c-b);
+	else if(b<c&&c<a) printf("%d",a-b);
+	else if(c<a&&a<b) printf("%d",b-c);
+	else printf("%d",a-c);
+	printf("\n");
+
+
+
+
+
+
+
+}
+```
