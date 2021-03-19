@@ -318,7 +318,7 @@ int main()
 
 }
 ```
-## 01.
+## 01.寫 struct的宣告、定義, 並宣告一個 struct 變數
 ```c
 #include <stdio.h>
 
@@ -329,5 +329,21 @@ struct POINT {
 int main()
 {
     struct POINT a;
+}
+```
+## 02.利用 C Tutor 及 CodeBlocks 示範 struct POINT a={4.1, 3.2}; 並利用 a.x 及 a.y 印出來
+```c
+#include <stdio.h>
+
+struct POINT {
+    float x,y;
+};
+
+int main()
+{
+    struct POINT a{4.1,3.2};
+    printf("%f %f\n",a.x,a.y);
+
+    return 0;
 }
 ```
