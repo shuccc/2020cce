@@ -369,5 +369,34 @@ int main()
     return 0;
 }
 ```
+## 04.利用 C Tutor 及 CodeBlocks(配合printf) 示範 外面的global全域變數 會初始值, 裡面的 local區域變數會是亂碼。 然後我們把 local變數裡面用程式來塞值。
+```c
+#include <stdio.h>
+struct DATA{
+	int x,y;
+}a[3];
+struct DATA b={100,200};
+
+int main()
+{
+	struct DATA c;
+	c=b;
+	
+	return 0;
+}
+```
+## 05.利用 C Tutor 及 CodeBlocks(配合printf) 示範, (結構)有個陣列、有個指標, 使用 p->x, p->y, p->z 取用到指標指到的值。
+```c
+#include <stdio.h>
+struct POINT{
+	float x,y,z;
+};
+struct POINT[5]={{0,0,0},{1,0,0},{0,1,0},{0,0,1},{1,1,1}}
+
+int main()
+{
+	struct POINT *p
+}
+```
 
 
