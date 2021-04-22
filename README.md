@@ -571,3 +571,37 @@ int main()
  printf("%d=50*%d+10*%d+5*%d+1*%d",n,n/50,(n%50)/10,(n%50%10)/5,(n%50%10%5)/1);
 }
 ```
+## 01.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+char line[2000][80];
+int compare(const void *p1,const void *p2)
+{
+	return strcmp((char*)p1,(char*)p2);
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	char trash[80];
+	for(int i=0;i<n;i++){
+		scanf("%s",line[i]);
+		gets(trash);
+	}
+	qsort(line,n,80,compare);
+	
+	int ans=1;
+	printf("%s ",line[0]);
+	for(int i=0;i<n-1;i++){
+		if(strcmp(line[i],line[i+1])!=0){
+		printf("%d\n",ans);
+		printf("%s ",line[i+1]);
+		ans=1;
+		}else ans++;
+	}
+	printf("%d\n",ans);
+
+}
+```
