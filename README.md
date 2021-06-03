@@ -735,7 +735,6 @@ void draw(){
 
 ##01.
 ```C
-<!DOCTYPE html>
 <html>
 <body>
 
@@ -756,7 +755,7 @@ void draw(){
                  Turn off the light</button>
 
 </body>
-</html
+</html>
 ```
 
 
